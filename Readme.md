@@ -15,7 +15,7 @@
 ```javascript
 var ProgressBar = require('progress');
 
-var bar = new ProgressBar(':bar', { total: 10 });
+var bar = ProgressBar.getNew(':bar', { total: 10 });
 var timer = setInterval(function(){
 bar.tick();
   if (bar.complete) {
